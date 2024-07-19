@@ -9,3 +9,6 @@ Example project using CodeIgniter 3
 - (Optional?) `chmod +x server.sh` 
 - Run `./server.sh` to start the server
 - Go to `http://localhost:8001/` and you should see an empty page showing "News articles"
+
+
+php -S localhost:8000 -t public

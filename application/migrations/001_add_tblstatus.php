@@ -26,3 +26,4 @@ class Migration_Add_tblstatus extends CI_Migration {
         $this->dbforge->drop_table('tblstatus');
     }
 }
+    
