@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Class Migration_Add_news
  * @property CI_DB_forge $dbforge The DB Forge
  */
-class Migration_Add_news extends CI_Migration {
+class Migration_Add_tblstatus extends CI_Migration {
 
     public function up()
     {
@@ -18,11 +18,11 @@ class Migration_Add_news extends CI_Migration {
         ));
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->add_key('slug', FALSE);
-        $this->dbforge->create_table('news');
+        $this->dbforge->create_table('tblstatus');
     }
 
     public function down()
     {
-        $this->dbforge->drop_table('news');
+        $this->dbforge->drop_table('tblstatus');
     }
 }
